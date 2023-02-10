@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./stylesheet.css" />
+    <script type="module" src="./js/state.js" defer></script>
+    <script type="module" src="./index.js" defer></script>
+    <script type="module" src="./js/BankController.js" defer></script>
+    <script type="module" src="./js/WorkController.js" defer></script>
+    <script type="module" src="./js/LaptopController.js" defer></script>
+    <title>Komputer Store</title>
+  </head>
+
+  <body>
+    <div class="header-line">
+      <h2>Komputer Store</h2>
+    </div>
+    <div class="small-card-container">
+      <div class="small-card card">
+        <div>
+          <h3>Joe Banker</h3>
+          <span class="card-info-line">
+            <span>Balance</span>
+            <span ><span id="bank-balance"></span> NOK</span>
+          </span>
+
+          <span class="card-info-line">
+            <span>Loan</span>
+            <span> <span id="loan-balance"></span> NOK</span>
+          </span>
+        </div>
+        <button class="loan-button button">Get a loan</button>
+      </div>
+
+      <div class="small-card card">
+        <div>
+          <h3>Work</h3>
+          <span class="card-info-line">
+            <span>Pay</span>
+            <span><span id="work-balance"></span> NOK</span>
+          </span>
+        </div>
+        <div class="work-button-container">
+          <div class="work-bank-button-container">
+            <button class="bank-button button">Bank</button>
+            <button class="work-button button">Work</button>
+          </div>
+          <button class="full-repay-button button">Repay loan</button>
+        </div>
+      </div>
+
+      <div class="small-card card">
+         <div>
+            <h3>Laptops</h3>
+            <select id="laptop-selection" >
+
+            </select>
+            <h4 class="features-header">Features:</h4>
+            <div id="feature-container">
+
+            </div>
+         </div>
+      </div>
+    </div>
+
+    <div class="big-card card">
+      <div id="laptop-image-container">
+      </div>
+      <div class="laptop-description-container">
+         <h2 id="laptop-header"></h2>
+         <p id="laptop-description"></p>
+      </div>
+      <div class="laptop-buy-container">
+         <h3><span id="laptop-price">1500</span> NOK</h3>
+         <button class="buy-button button">BUY NOW</button>
+      </div>
+    </div>
+  </body>
+</html>

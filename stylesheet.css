@@ -1,0 +1,161 @@
+body {
+   display: flex;
+   width: 100vw;
+   height: 100vh;
+   flex-direction: column;
+   align-items: center;
+   justify-content: start;
+   padding: 0;
+   margin: 0;
+   font-family:Arial, Helvetica, sans-serif;
+}
+input, button, submit { border:none; }
+
+.header-line{
+   background-color: black;
+   color: white;
+   display: flex;
+   align-items: center;
+   padding-left: 20%;
+
+   height: 3rem;
+   width: 100%;
+}
+
+.small-card-container{
+   margin: 2rem;
+   width: 80%;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+
+.small-card {
+   width: 15rem;
+   min-width: 10rem;
+   height: 15rem;
+   margin-bottom: 2rem;
+   padding: 1rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+.card{
+   background-color: rgb(236, 236, 236);
+   border-radius: 1.5rem;
+}
+
+
+.card-info-line{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+
+.loan-button{
+   background-color: rgb(74,240,160);
+   border: 2px solid rgba(100,194,148,255);
+}
+.bank-button{
+   background-color: rgb(234,240,72);
+   border: 2px solid rgba(210,212,109,255);
+}
+.work-button{
+   background-color: rgb(79,113,240);
+   border: 2px solid rgba(93,115,194,255);
+}
+
+.button{
+   border-radius: 6px;
+   font-size: 16px;
+   max-height: 3rem;
+   cursor:pointer;
+   flex-grow: 1;
+}
+.work-bank-button-container{
+   width: 100%;
+   gap: 5px;
+   height: 3rem;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+.work-button-container{
+   display: flex;
+   justify-content: end;
+   flex-direction: column;
+   align-items: center;
+   height: 70%;
+   gap: 5px;
+   width: 100%;
+}
+
+#laptop-select{
+   width: 100%;
+}
+
+.big-card{
+   width: 80%;
+   height: 15rem;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between;
+   padding: 1rem;
+}
+#laptop-image-container{
+   height:100%;
+   width: 20%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.laptop-description-container{
+   height:100%;
+   width: 55%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+.laptop-buy-container{
+   height:100%;
+   width: 20%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.buy-button{
+   background-color: rgba(76,201,241,255);
+   border: 2px solid rgba(81,179,206,255);
+   width: 90%;
+}
+.full-repay-button{
+   background-color: rgb(253, 123, 123);
+   border: 2px solid rgb(186, 92, 92);
+   width: 100%;
+}
+#laptop-image{
+   width: 90%;
+   height: auto;
+}
+
+#feature-container {
+   display: flex;
+   flex-direction: column;
+   overflow: scroll;
+   gap: 5px;
+   max-height: 7rem;
+}
+
+.laptop-feature{
+   margin:0;
+   font-size: 12px;
+   text-overflow: ellipsis;
+}
+
+.features-header {
+   margin-bottom: 5px;
+}
