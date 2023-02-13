@@ -97,6 +97,7 @@ input, button, submit { border:none; }
 
 .big-card{
    width: 80%;
+   min-width: 25rem;
    height: 15rem;
    display: flex;
    flex-direction: row;
@@ -136,6 +137,7 @@ input, button, submit { border:none; }
    background-color: rgb(253, 123, 123);
    border: 2px solid rgb(186, 92, 92);
    width: 100%;
+   display: none;
 }
 #laptop-image{
    width: 90%;

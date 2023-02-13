@@ -3,8 +3,11 @@ import state, {
   loanElem,
   workElem,
   fullRepayButton,
-} from "./state";
+} from "./state.js";
 
+/**
+ * Updates all on-screen fields when they change.
+ */
 export function updateFields() {
   balanceElem.innerText = state.balance;
   loanElem.innerText = state.loan;

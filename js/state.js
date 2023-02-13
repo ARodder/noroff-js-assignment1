@@ -1,11 +1,20 @@
+
+/**
+ * Global state used to keep track of all the on-screen values.
+ */
 let state = {
-   balance:100,
+   balance:0,
    loan:0,
+   pay:0,
    laptops:[],
    currentLaptop:{}
 }
+
 export default state;
 
+/**
+ * Defining and exporting all the elements used throughout the website.
+ */
 export const BASE_API_URL = "https://hickory-quilled-actress.glitch.me/";
 
 export const BANK_BALANCE_ID = "bank-balance";
